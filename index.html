@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Williamson | Compass RE Texas</title>
-    
+    <title>Annie Sumang | CRI</title>
+   
     <script src="https://cdn.tailwindcss.com"></script>
-    
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
+   
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- GSAP for Advanced Animations -->
@@ -76,7 +76,7 @@
             margin-top: 1rem;
             opacity: 0;
         }
-        
+       
         /* Hero Image Styling */
         .hero-image-container {
             position: absolute;
@@ -122,9 +122,9 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             color: #333;
         }
-        
+       
         .nav-scrolled .nav-logo,
-        .nav-scrolled .nav-link, 
+        .nav-scrolled .nav-link,
         .nav-scrolled .nav-button {
             color: #333 !important;
         }
@@ -132,8 +132,8 @@
         .nav-scrolled .contact-button-bordered {
             border-color: var(--text-dark) !important;
         }
-        
-        .nav-scrolled .nav-link:hover, 
+       
+        .nav-scrolled .nav-link:hover,
         .nav-scrolled .nav-button:hover {
             color: #888 !important;
         }
@@ -147,7 +147,7 @@
         .property-card:hover .overlay {
             opacity: 1;
         }
-        
+       
         .property-card img {
             transition: transform 0.3s ease-in-out;
         }
@@ -168,7 +168,7 @@
         .dropdown:hover .dropdown-menu {
             display: block;
         }
-        
+       
         .dropdown-menu {
             display: none;
             animation: fadeIn 0.2s ease-in-out;
@@ -178,31 +178,45 @@
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+       
+        /* Sold Banner for Property Cards */
+        .sold-banner {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: #c0392b;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            z-index: 10;
+        }
 
     </style>
 </head>
 <body class="bg-white">
 
-    <!-- Preloader 2.0 -->
+    <!-- Preloader -->
     <div id="preloader">
         <div id="preloader-logo">
             <svg viewBox="0 0 100 100">
                 <path d="M 50,5 L 95,27.5 L 95,72.5 L 50,95 L 5,72.5 L 5,27.5 Z"></path>
             </svg>
         </div>
-        <div id="preloader-text">JONATHAN WILLIAMSON</div>
+        <div id="preloader-text">ANNIE SUMANG</div>
     </div>
 
     <div id="main-content" class="opacity-0">
         <header id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-transparent text-white">
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#" class="nav-logo text-2xl font-bold tracking-wider" style="font-family: 'Cormorant Garamond', serif;">JONATHAN WILLIAMSON</a>
+                <a href="#" class="nav-logo text-2xl font-bold tracking-wider" style="font-family: 'Cormorant Garamond', serif;">ANNIE SUMANG</a>
                 <nav class="hidden md:flex items-center space-x-8">
                     <div class="dropdown relative">
                         <a href="#properties" class="nav-link text-sm uppercase tracking-widest transition duration-300">Listings</a>
                         <div class="dropdown-menu absolute left-0 mt-2 w-48 bg-white text-black shadow-lg rounded-md py-2">
                             <a href="#properties" class="block px-4 py-2 text-sm hover:bg-gray-100">Featured Properties</a>
-                            <a href="https://www.har.com/jonathan-williamson/agent_jmwill" target="_blank" class="block px-4 py-2 text-sm hover:bg-gray-100">All Active & Sold</a>
                         </div>
                     </div>
                     <div class="dropdown relative">
@@ -216,7 +230,7 @@
                      <div class="dropdown relative">
                         <a href="#agent" class="nav-link text-sm uppercase tracking-widest transition duration-300">About</a>
                          <div class="dropdown-menu absolute left-0 mt-2 w-48 bg-white text-black shadow-lg rounded-md py-2">
-                            <a href="#agent" class="block px-4 py-2 text-sm hover:bg-gray-100">Meet Jonathan</a>
+                            <a href="#agent" class="block px-4 py-2 text-sm hover:bg-gray-100">Meet Annie</a>
                             <a href="#testimonials" class="block px-4 py-2 text-sm hover:bg-gray-100">Testimonials</a>
                         </div>
                     </div>
@@ -243,11 +257,11 @@
         <main>
             <section class="relative h-screen flex items-center justify-center text-white text-center">
                 <div class="hero-image-container">
-                    <img id="heroImage" src="https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/475121291_1127328909084325_7947568230884282844_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=IZnyt1QUdfkQ7kNvwHkQSGW&_nc_oc=AdmPxUpE1LyQiOz1jJSr_MSIraUY7yt7-GlLUYFKRZG0Atn4XpTr36J1d5thYC25TlE&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=KJLKcy3vuZs_-xQI-53J8A&oh=00_AfUp1NHaahCp8zhvpQtvTHILjX0MEGC6h_JQCtr8HqKaoA&oe=68A7062F" alt="Luxury Mansion">
+                    <img id="heroImage" src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8fDA%D" alt="Luxury House Exterior">
                 </div>
                 <div class="image-overlay"></div>
                 <div class="z-10 p-6 reveal">
-                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-widest mb-6">Jonathan Williamson</h1>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-widest mb-6">Annie Sumang</h1>
                     <p class="text-xl md:text-2xl mb-8 tracking-wider">Your Guide to Houston Real Estate</p>
                     <a href="#properties" class="bg-white/10 border border-white/50 backdrop-blur-sm text-white uppercase tracking-widest font-light px-10 py-3 rounded-full hover:bg-white hover:text-black transition duration-300">
                         Explore Properties
@@ -258,26 +272,21 @@
             <section id="properties" class="py-24 bg-white reveal">
                 <div class="container mx-auto px-6">
                     <h2 class="text-4xl md:text-5xl text-center mb-4">Featured Properties</h2>
-                    <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">A curated selection of exquisite homes currently available in the greater Houston area.</p>
-                    
+                    <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">A curated selection of exquisite homes available in the greater Houston area.</p>
+                   
                     <div class="mb-12 p-4 bg-gray-50 rounded-lg shadow-sm flex flex-col md:flex-row items-center gap-4">
                         <input id="keyword-search" type="text" placeholder="Search by address, city, or keyword..." class="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300">
                         <select id="price-range" class="w-full md:w-1/4 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300">
                             <option value="all">All Prices</option>
-                            <option value="0-500000">$0 - $500k</option>
-                            <option value="500000-750000">$500k - $750k</option>
-                            <option value="750000+">$750k+</option>
+                            <option value="0-1000000">$0 - $1M</option>
+                            <option value="1000000-2000000">$1M - $2M</option>
+                            <option value="2000000+">$2M+</option>
                         </select>
                         <button id="search-button" class="w-full md:w-auto bg-gray-800 text-white px-8 py-3 rounded-md hover:bg-gray-700 transition">Search</button>
                     </div>
 
                     <div id="property-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Property cards will be dynamically inserted by JS -->
-                    </div>
-                     <div class="text-center mt-12">
-                        <a href="https://www.har.com/jonathan-williamson/agent_jmwill" target="_blank" class="inline-block bg-gray-800 text-white uppercase tracking-widest text-sm px-8 py-4 rounded-md hover:bg-gray-700 transition">
-                            View All Active & Sold Listings on HAR.com
-                        </a>
                     </div>
                     <div id="no-results" class="hidden text-center py-12">
                         <h3 class="text-2xl text-gray-700">No Properties Found</h3>
@@ -286,38 +295,31 @@
                 </div>
             </section>
 
-            <!-- === REDESIGNED AGENT SECTION === -->
+            <!-- === AGENT SECTION === -->
             <section id="agent" class="py-24 bg-gray-50 reveal">
                 <div class="container mx-auto px-6">
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-wrap lg:flex-nowrap items-center p-8 lg:p-4">
                         <!-- Image Column -->
                         <div class="w-full lg:w-1/3 flex justify-center p-4">
                             <div class="w-full max-w-[280px] transform hover:scale-105 transition-transform duration-300">
-                               <img src="https://www.compass.com/m/13/b2d5570d-67f3-4660-811c-ca1e9064d119/300x300.webp" alt="Jonathan Williamson" class="rounded-full shadow-lg w-full h-auto">
+                               <img src="https://assets.site-static.com/agentsitephotos/6099/agent_4615_lrg.jpg" alt="Annie Sumang" class="rounded-full shadow-lg w-full h-auto">
                             </div>
                         </div>
                         <!-- Text Column -->
                         <div class="w-full lg:w-2/3 p-4 lg:pl-12">
-                            <h2 class="text-4xl md:text-5xl mb-2">Meet Jonathan Williamson</h2>
-                            <p class="mb-6 text-xl" style="color: var(--navy-blue);">Broker Associate at Compass RE Texas</p>
-                            <p class="text-gray-600 leading-relaxed mb-6">"I have a passion for real estate and helping clients achieve their goals. I have been a licensed Realtor since 2004 and a licensed Broker since 2006. I have dedicated my entire professional career to the real estate industry. I am a Houston native and have extensive knowledge of the Houston real estate market. I have a Bachelors of Business Administration in Finance from the University of Houston. In my free time, I enjoy spending time with my wife and our two children."</p>
-                            <div class="border-t border-gray-200 pt-6 mt-6">
-                                <h4 class="text-lg font-semibold text-gray-800 mb-4 uppercase tracking-wider">Credentials & Expertise</h4>
-                                <ul class="space-y-3 text-gray-700">
-                                    <li class="flex items-center"><i data-lucide="award" class="w-5 h-5 mr-3 text-gray-400"></i><span><strong>Broker License:</strong> #554878</span></li>
-                                    <li class="flex items-center"><i data-lucide="calendar" class="w-5 h-5 mr-3 text-gray-400"></i><span><strong>Realtor Since:</strong> 2004 | <strong>Broker Since:</strong> 2006</span></li>
-                                    <li class="flex items-center"><i data-lucide="graduation-cap" class="w-5 h-5 mr-3 text-gray-400"></i><span><strong>Education:</strong> Syracuse University, University of St. Thomas (TX)</span></li>
-                                </ul>
-                            </div>
-                            <!-- === NEW SKILLS SECTION === -->
+                            <h2 class="text-4xl md:text-5xl mb-2">Meet Annie Sumang</h2>
+                            <p class="mb-6 text-xl" style="color: var(--navy-blue);">Real Estate Professional at CRI</p>
+                            <p class="text-gray-600 leading-relaxed mb-6">With a passion for real estate and a commitment to helping clients achieve their dreams, Annie Sumang is a guiding force in the Houston market. Known for her dedication and market expertise, she ensures every client feels supported and confident throughout their real-estate journey, whether buying their first home or selling a long-held property.</p>
+                           
+                            <!-- === SKILLS SECTION === -->
                             <div class="border-t border-gray-200 pt-6 mt-6">
                                 <h4 class="text-lg font-semibold text-gray-800 mb-4 uppercase tracking-wider">Professional Skills</h4>
                                 <div class="flex flex-wrap gap-2 text-sm">
-                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Interior Design</span>
-                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Social Media Marketing</span>
-                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Marketing</span>
+                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Buyer Representation</span>
+                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Seller Representation</span>
+                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Market Analysis</span>
                                     <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Real Estate Transactions</span>
-                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Real Estate Investor</span>
+                                    <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Negotiation</span>
                                     <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full border">Investment Properties</span>
                                 </div>
                             </div>
@@ -326,35 +328,35 @@
                     </div>
                 </div>
             </section>
-            
+           
             <section id="testimonials" class="py-24 bg-white reveal">
                  <div class="container mx-auto px-6">
                     <h2 class="text-4xl md:text-5xl text-center mb-12">What My Clients Say</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <blockquote class="text-gray-600 italic mb-4">"Jonathan was very professional and knowledgeable. He was always available to answer our questions and guide us through the process. We would highly recommend him to anyone looking to buy or sell a home."</blockquote>
+                            <blockquote class="text-gray-600 italic mb-4">"Annie was very professional and knowledgeable. She was always available to answer our questions and guide us through the process. We would highly recommend her to anyone looking to buy or sell a home."</blockquote>
                             <cite class="block not-italic font-semibold text-right">- Client Testimonial</cite>
                         </div>
                         <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <blockquote class="text-gray-600 italic mb-4">"Working with Jonathan was a great experience. He is very patient and understanding. He took the time to explain everything to us and made sure we were comfortable with every decision."</blockquote>
+                            <blockquote class="text-gray-600 italic mb-4">"Working with Annie was a great experience. She is very patient and understanding. She took the time to explain everything to us and made sure we were comfortable with every decision."</blockquote>
                             <cite class="block not-italic font-semibold text-right">- Client Testimonial</cite>
                         </div>
                         <div class="bg-white p-8 rounded-lg shadow-lg">
-                            <blockquote class="text-gray-600 italic mb-4">"Jonathan is a true professional. He is very knowledgeable about the market and was able to get us a great deal on our new home. We would definitely use him again in the future."</blockquote>
+                            <blockquote class="text-gray-600 italic mb-4">"Annie is a true professional. She is very knowledgeable about the market and was able to get us a great deal on our new home. We would definitely use her again in the future."</blockquote>
                             <cite class="block not-italic font-semibold text-right">- Client Testimonial</cite>
                         </div>
                     </div>
                  </div>
             </section>
 
-            <!-- === REVISED COMMUNITIES SECTION === -->
+            <!-- === COMMUNITIES SECTION === -->
             <section id="communities" class="py-24 bg-gray-50 reveal">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-16">
                         <h2 class="text-4xl md:text-5xl">Specializing in Houston's Premier Neighborhoods</h2>
                         <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Deep expertise in the communities that define the modern Houston lifestyle.</p>
                     </div>
-                    
+                   
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <!-- Card 1: The Heights -->
                         <div class="md:row-span-2 rounded-lg overflow-hidden shadow-xl group relative cursor-pointer">
@@ -364,7 +366,7 @@
                                 <p class="text-gray-300 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-h-0 group-hover:max-h-screen">Experience the perfect blend of historic charm and modern living in one of Houston's most sought-after neighborhoods, known for its unique architecture, boutique shops, and vibrant culinary scene.</p>
                             </div>
                         </div>
-                    
+                   
                         <!-- Card 2: Downtown -->
                         <div class="h-80 rounded-lg overflow-hidden shadow-xl group relative cursor-pointer">
                              <img src="https://media-www.houstonproperties.com/topic/midtown/CrawfordAerialTW-8.jpg" alt="Downtown Houston skyline" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -373,7 +375,7 @@
                                 <p class="text-gray-300 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-h-0 group-hover:max-h-screen">Embrace the heart of the city. Downtown living offers unparalleled access to business hubs, theater districts, sports arenas, and a thriving urban park system at Discovery Green.</p>
                             </div>
                         </div>
-                    
+                   
                         <!-- Card 3: Midtown -->
                         <div class="h-80 rounded-lg overflow-hidden shadow-xl group relative cursor-pointer">
                             <img src="https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/aurslijkq2lw2edz0ufo" alt="Vibrant street scene in Midtown Houston" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
@@ -385,7 +387,7 @@
                     </div>
                 </div>
             </section>
-            
+           
             <section id="services" class="py-24 bg-white reveal">
                 <div class="container mx-auto px-6 text-center">
                     <h2 class="text-4xl md:text-5xl mb-4">Comprehensive Client Services</h2>
@@ -415,7 +417,7 @@
                 </div>
             </section>
 
-            <section id="contact" class="h-[70vh] parallax-bg flex items-center justify-center" style="background-image: url('https://media-www.houstonproperties.com/topic/midtown/CrawfordAerialTW-8.jpg');">
+            <section id="contact" class="h-[70vh] parallax-bg flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
                 <div class="absolute inset-0 bg-black/50"></div>
                 <div class="relative z-10 container mx-auto px-6 text-center text-white reveal">
                     <h2 class="text-4xl md:text-5xl font-bold mb-6">Reserve Your Confidential Consultation</h2>
@@ -433,9 +435,9 @@
             <div class="container mx-auto px-6 py-12">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
                     <div>
-                        <h4 class="text-lg font-semibold text-gray-800 mb-4" style="font-family: 'Cormorant Garamond', serif;">JONATHAN WILLIAMSON</h4>
-                        <p>Broker Associate, Compass RE Texas</p>
-                        <p class="mt-4">TX Real Estate License #554878</p>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4" style="font-family: 'Cormorant Garamond', serif;">ANNIE SUMANG</h4>
+                        <p>Real Estate Professional, CRI</p>
+                        <p class="mt-4">TX Real Estate License #831319</p>
                     </div>
                     <div>
                         <h5 class="font-semibold text-gray-800 mb-4 uppercase tracking-wider">Navigation</h5>
@@ -446,43 +448,40 @@
                     </div>
                     <div>
                         <h5 class="font-semibold text-gray-800 mb-4 uppercase tracking-wider">Contact</h5>
-                        <p>Compass RE Texas, LLC</p>
-                        <p class="mt-2">(832) 279-3343</p>
-                        <p class="mt-2">jonathan.williamson@compass.com</p>
+                        <p>CRI</p>
+                        <p class="mt-2">(713) 376-5565</p>
+                        <p class="mt-2">annie.sumang@CRI.com</p>
                     </div>
                     <div>
                         <h5 class="font-semibold text-gray-800 mb-4 uppercase tracking-wider">Connect</h5>
                         <div class="flex space-x-4">
-                            <a href="https://www.har.com/jonathan-williamson/agent_jmwill" target="_blank" class="hover:text-black"><i data-lucide="home"></i></a>
-                            <a href="https://www.instagram.com/keeping_it_realty/" target="_blank" class="hover:text-black"><i data-lucide="instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/jonathanwilliamsonchristiesinternationalrealestate/" target="_blank" class="hover:text-black"><i data-lucide="linkedin"></i></a>
-                            <a href="https://www.facebook.com/keepingitrealty/" target="_blank" class="hover:text-black"><i data-lucide="facebook"></i></a>
+                            <a href="#" target="_blank" class="hover:text-black"><i data-lucide="home"></i></a>
+                            <a href="#" target="_blank" class="hover:text-black"><i data-lucide="instagram"></i></a>
+                            <a href="#" target="_blank" class="hover:text-black"><i data-lucide="linkedin"></i></a>
+                            <a href="#" target="_blank" class="hover:text-black"><i data-lucide="facebook"></i></a>
                         </div>
-                         <p class="mt-4 text-xs">Affiliated with <span class="font-semibold">Compass</span></p>
+                         <p class="mt-4 text-xs">Affiliated with <span class="font-semibold">CRI</span></p>
                     </div>
                 </div>
                 <div class="mt-12 border-t border-gray-300 pt-6 text-center text-xs">
-                    <p>&copy; 2024 Jonathan Williamson | Compass RE Texas. All Rights Reserved. Equal Housing Opportunity.</p>
+                    <p>&copy; 2024 Annie Sumang | CRI. All Rights Reserved. Equal Housing Opportunity.</p>
                 </div>
             </div>
         </footer>
     </div> <!-- End #main-content -->
-    
+   
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             gsap.registerPlugin(ScrollTrigger);
             lucide.createIcons();
 
-            // --- JONATHAN WILLIAMSON'S UPDATED LISTINGS ---
+            // --- ANNIE SUMANG'S LISTINGS ---
             const properties = [
-                { price: 625000, title: "1622 Marble St", location: "Houston, TX 77023", details: "3 Beds | 2/1 Baths | 2,678 Sqft", image: "https://pics.prevu.com/eyJidWNrZXQiOiJwcmV2dS1saXN0aW5ncyIsImtleSI6Imxpc3RpbmdzL2o1YVkweDI5dmpjZU1lSmV4MDQ0VHBYRy9jMmY1NzVlODY1NzIwNTFmYTUwYzMxNDFiYTMyZmM3ZCIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NTk0LCJoZWlnaHQiOjQ0NSwiZml0IjoiY292ZXIifX19", link: "https://www.har.com/homedetail/1622-marble-st-houston-tx-77023/15738616?cid=jmwill" },
-                { price: 574999, title: "5105 Lindsay St", location: "Houston, TX 77023", details: "2 Beds | 2 Baths | 1,998 Sqft", image: "https://photos.zillowstatic.com/fp/1313db458a2d4d4975927b7f7c1c95e0-cc_ft_1152.webp", link: "https://www.har.com/homedetail/5105-lindsay-st-houston-tx-77023/9401595?cid=jmwill" },
-                { price: 319999, title: "8614 Viera Ln", location: "Houston, TX 77075", details: "3 Beds | 2 Baths | 1,617 Sqft", image: "https://photos.zillowstatic.com/fp/8a4539f01576c24ec5624e7fe285dc9b-cc_ft_1152.webp", link: "https://www.har.com/homedetail/8614-viera-ln-houston-tx-77075/3774609?cid=jmwill" },
-                { price: 319999, title: "10219 Carmencita Way", location: "Houston, TX 77075", details: "3 Beds | 2 Baths | 1,617 Sqft", image: "https://photos.zillowstatic.com/fp/8114d85b52ae6338c50fb4a09a62a62a-cc_ft_1152.webp", link: "https://www.har.com/homedetail/10219-carmencita-way-houston-tx-77075/9339541?cid=jmwill" },
-                { price: 750000, title: "4976 Polk St", location: "Houston, TX 77023", details: "Lots | 21,763 lot Sqft", image: "https://photos.zillowstatic.com/fp/ef11292f1b4dfc591eea58a81f0a03aa-cc_ft_1152.webp", link: "https://www.har.com/homedetail/4976-polk-st-houston-tx-77023/17247711?cid=jmwill" },
-                { price: 324999, title: "7947 Avenue F", location: "Houston, TX 77012", details: "3 Beds | 2 Baths | 1,571 Sqft", image: "https://photos.zillowstatic.com/fp/7963505e662d46a553892b6974cd63f9-cc_ft_1152.webp", link: "https://www.har.com/homedetail/7947-avenue-f-houston-tx-77012/17247908?cid=jmwill" }
+                { status: "Active", price: 3500000, title: "2915 W Dallas St", location: "Houston, TX 77019", details: "3 Beds | 3/1 Baths | 4,258 Sqft", image: "https://photos.zillowstatic.com/fp/6b28029c3997cfaca169462d952b42cf-cc_ft_1152.webp", link: "https://www.har.com/homedetail/2915-w-dallas-st-houston-tx-77019/10140364?cid=Asumang24" },
+                { status: "Sold", price: 1199000, title: "14554 Cindywood Dr", location: "Houston, TX 77079", details: "4 Beds | 3/1 Baths | 3,868 Sqft", image: "https://ssl.cdn-redfin.com/photo/104/bigphoto/864/6807864_1_7.jpg", link: "https://www.har.com/homedetail/14554-cindywood-dr-houston-tx-77079/3321840?sid=9867868&cid=Asumang24" },
+                { status: "Sold", price: 599000, title: "1702 Cedar Creek Ct", location: "Houston, TX 77077", details: "4 Beds | 2/1 Baths | 2,752 Sqft", image: "https://ap.rdcpix.com/33ec58a4c4489a99091924d368412358l-m875585600rd-w960_h720.webp", link: "https://www.har.com/homedetail/1702-cedar-creek-ct-houston-tx-77077/3415843?sid=9539505&cid=Asumang24" }
             ];
-            
+           
             const propertyGrid = document.getElementById('property-grid');
             const noResultsDiv = document.getElementById('no-results');
 
@@ -495,10 +494,10 @@
 
                 const tl = gsap.timeline({
                     onComplete: () => {
-                        gsap.to(preloader, { 
-                            opacity: 0, 
-                            duration: 0.5, 
-                            onComplete: () => preloader.style.display = 'none' 
+                        gsap.to(preloader, {
+                            opacity: 0,
+                            duration: 0.5,
+                            onComplete: () => preloader.style.display = 'none'
                         });
                         gsap.to(mainContent, { opacity: 1, duration: 1 });
                         initScrollAnimations(); // Start scroll animations after preloader
@@ -519,9 +518,11 @@
                     noResultsDiv.classList.add('hidden');
                 }
                 filteredProperties.forEach(prop => {
+                    const soldBannerHTML = prop.status === 'Sold' ? '<div class="sold-banner">Sold</div>' : '';
                     const card = `
                         <a href="${prop.link}" target="_blank" class="property-card block bg-white rounded-lg overflow-hidden shadow-md group">
                             <div class="relative">
+                                ${soldBannerHTML}
                                 <img src="${prop.image}" alt="${prop.title}" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/94a3b8?text=Image+Not+Found';">
                                 <div class="overlay absolute inset-0 bg-black/50 flex items-center justify-center text-white p-4 text-center">
                                     <div>
@@ -560,7 +561,7 @@
 
 
             // --- Event Listeners & Initial Calls ---
-            
+           
             // Start preloader
             setupPreloader();
 
@@ -581,13 +582,13 @@
                     let priceMatch = false;
                     if (priceRange === 'all') {
                         priceMatch = true;
-                    } else if (priceRange === '750000+') {
-                        if (price >= 750000) priceMatch = true;
+                    } else if (priceRange === '2000000+') {
+                        if (price >= 2000000) priceMatch = true;
                     } else {
                         const [min, max] = priceRange.split('-').map(p => parseInt(p));
                         if (price >= min && price <= max) priceMatch = true;
                     }
-                    
+                   
                     return keywordMatch && priceMatch;
                 });
 
